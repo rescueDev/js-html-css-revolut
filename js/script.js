@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(".menu-shown").removeClass("menu-shown");
     //aggiungo a tutti
     $(this).find(".dropdown-menu").addClass("menu-shown");
-
+    //faccio sparire tutti gli eventuali dropdown-menu aperti
     $(".dropdown-menu").not(".menu-shown").fadeOut();
     $(this).find(".dropdown-menu").fadeToggle();
   });
